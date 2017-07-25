@@ -1,0 +1,9 @@
+Time	Name	P #	Exp #	Age	Height	Weight	Gender	Hand	Other    Movie1    q1,a1 q2,a2    movie2  q1,a1  q2,a2
+
+09:51:11 7/24/2017	1	1	1	1	1	1	Female	R	1Condition Set C
+10:01:45 7/24/2017	2	2	2	2	2	2	Female	R	Condition Set D
+10:05:49 7/24/2017	3	3	3	3	3	3	Male		Condition Set A(0.2, 2) 5, 2, 1, 5 (0.4, 5) 2, 3, 4, 2 
+10:33:33 7/24/2017	1						Male		Condition Set B
+10:35:13 7/24/2017	3						Male		Condition Set C
+10:41:49 7/24/2017							Male		Condition Set D(0.4, 5) 2, 4, 3, 5 
+11:09:39 7/24/2017	5	2	2	2			Male		Condition Set A

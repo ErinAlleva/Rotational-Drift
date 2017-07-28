@@ -47,7 +47,8 @@ public class GUI_Handler : MonoBehaviour {
 		string theTime = DateTime.Now.ToString ("hh:mm:ss");
 		string theDate = DateTime.Now.ToString ("d");
 		if (!File.Exists (path)) {
-			string header = "Time\tName\tP #\tExp #\tAge\tHeight\tWeight\tGender\tHand\tOther\r\n";
+			string header = "Time\tName\tP #\tExp #\tAge\tHeight\tWeight\tGender\tHand\tOther\tConditionSet\tRotationSpeed\tVideoLength\ta1\ta2\ta3\ta4" +
+                "\tRotationSpeed\tVideoLength\ta1\ta2\ta3\ta4\tRotationSpeed\tVideoLength\ta1\ta2\ta3\ta4\tRotationSpeed\tVideoLength\ta1\ta2\ta3\ta4";
 			File.WriteAllText (path, header);
 		}
 		string hand = "";
@@ -55,9 +56,11 @@ public class GUI_Handler : MonoBehaviour {
 			hand = hand + "L";
 		if (right.isOn)
 			hand = hand + "R";
-		string appendText = "\r\n" + theTime+" "+theDate + "\t" + raName.text +"\t"+ partic.text +"\t"+ exp.text +"\t"+ age.text +
-			"\t"+ height.text +"\t"+ weight.text +"\t"+ sex.captionText.text +"\t"+ hand +"\t"+ other.text ;
-		File.AppendAllText (path, appendText);
+        string appendText = "\r\n" + theTime + " " + theDate + "\t" + raName.text + "\t" + partic.text + "\t" + exp.text + "\t" + age.text +
+            "\t" + height.text + "\t" + weight.text + "\t" + sex.captionText.text + "\t" + hand + "\t" + other.text;
+           
+
+        File.AppendAllText (path, appendText);
 
     }
 

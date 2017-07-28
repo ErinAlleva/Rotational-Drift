@@ -9,13 +9,17 @@ using UnityEngine.EventSystems;
 public class questionnaireHandler : MonoBehaviour
 {
 
-    GameObject cameraObject;
+    public GameObject cameraObject;
     videoAndRotationHandler rotationHandler;
 
     public GameObject questionnaire;
     public string questionFileName;
     public string dataFileName = "";
     private string rotAndLength = "empty";
+    private string rotationSpeed = "null";
+    private string movieLength = "null";
+
+    private float rotOffset = 0;
 
 
     public Text val1;
@@ -134,7 +138,11 @@ public class questionnaireHandler : MonoBehaviour
     {
 
         //Debug.Log("changing to the correct value for rotation and length");
-        rotAndLength = rotationHandler.speedLength.text;
+        rotationSpeed = rotationHandler.rotationSpeed;
+        movieLength = rotationHandler.movieLength;
+        //rotAndLength = rotationHandler.speedLength.text;
+        rotOffset = rotationHandler.deltaDistance;
+
 
         val1.text = num1.ToString();
         val2.text = num2.ToString();
@@ -278,7 +286,7 @@ public class questionnaireHandler : MonoBehaviour
         string answer3 = num3.ToString();
         string answer4 = num4.ToString();
         
-        File.AppendAllText(path, rotAndLength + " " + answer1 + ", " + answer2 + ", " + answer3 + ", " + answer4 + " ");
+        File.AppendAllText(path, "\t" + rotationSpeed + "\t" + movieLength + "\t" + rotOffset.ToString() + "\t" + answer1 + "\t" + answer2 + "\t" + answer3 + "\t" + answer4 + "\t");
         num1 = 0;
         num2 = 0;
         num3 = 0;

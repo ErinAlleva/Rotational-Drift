@@ -5,13 +5,13 @@ Puts users in a virtual movie theater and randomly assigns thems to different se
 and asks questions after each video.
 
 
-![alt text](screenshots/Capture.PNG "Movie Theater")
+![alt text](screenshots/Capture.JPG "Movie Theater")
 The movie theaters
 
-![alt text](screenshots/Capture2.PNG "playing movie" )
+![alt text](screenshots/Capture2.JPG "playing movie" )
 
 Playing the first movie
 
-![alt text](screenshots/Capture3.PNG "question screen" )
+![alt text](screenshots/Capture3.JPG "question screen" )
 
 Participant can respond to questions, these are filler questions

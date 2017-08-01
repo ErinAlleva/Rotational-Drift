@@ -6,7 +6,8 @@ and asks questions after each video.
 
 
 ![alt text](screenshots/Capture.JPG "Movie Theater")
-The movie theaters
+
+The movie theater
 
 ![alt text](screenshots/Capture2.JPG "playing movie" )
 
